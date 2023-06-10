@@ -6,7 +6,7 @@ builder.Services.AddControllers();
 builder.Services.AddCors();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddSignalR();
+builder.Services.AddSignalR().AddStackExchangeRedis("<OUTPUT_REDIS_CONFIGURATION_ENDPOINT>:6379,ssl=True,abortConnect=False"); ;
 
 var app = builder.Build();
 

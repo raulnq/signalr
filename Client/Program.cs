@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.SignalR.Client;
 
 var connection = new HubConnectionBuilder()
-    .WithUrl(new Uri("http://localhost:5194/chathub"))
+    .WithUrl(new Uri("http://<OUTPUT_ENVIRONMENT_CNAME>/chathub"))
     .WithAutomaticReconnect()
     .Build();
 
